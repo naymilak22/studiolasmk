@@ -128,3 +128,50 @@
     @apply font-sans;
   }
 }
+
+.salon-calendar .fc {
+  --fc-border-color: #e5e7eb;
+  --fc-page-bg-color: #ffffff;
+  --fc-neutral-bg-color: #f9fafb;
+  --fc-today-bg-color: #fdecea;
+  --fc-button-text-color: #111827;
+  --fc-button-bg-color: #ffffff;
+  --fc-button-border-color: #e5e7eb;
+  --fc-button-hover-bg-color: #f9fafb;
+  --fc-button-hover-border-color: #e5e7eb;
+  --fc-button-active-bg-color: #e53935;
+  --fc-button-active-border-color: #e53935;
+  --fc-button-active-text-color: #ffffff;
+  --fc-now-indicator-color: #e53935;
+}
+
+.salon-calendar .fc .fc-toolbar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .salon-calendar .fc .fc-toolbar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .salon-calendar .fc .fc-toolbar-title {
+    font-size: 1rem;
+  }
+
+  .salon-calendar .fc .fc-button {
+    font-size: 0.8125rem;
+  }
+}
+
+.salon-calendar .fc .fc-button {
+  border-radius: 9999px;
+  box-shadow: none;
+  text-transform: none;
+}
+
+.salon-calendar .fc .fc-event {
+  border-radius: 0.75rem;
+  padding: 0 0.25rem;
+}
